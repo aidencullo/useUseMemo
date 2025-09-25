@@ -1,12 +1,13 @@
 import { useMemo } from 'react'
 
 function App() {
-    console.log("rendering <App/>")
+    console.log('rendering <App/>')
     
-    // const result = useMemo(() => console.log())
-    const result = 1
+    const result = useMemo(() => {
+	console.log('running useMemo!')
+    })
 
-    return result
+    return 1
 }
 
 export default App
